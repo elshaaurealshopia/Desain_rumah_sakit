@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/chartjs/Chart.min.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Bagian Navigasi -->
+        <div id="sidebar" class='active'>
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                   <h5 class="sidebar-title">RSUD Raden Mataher</h5>
+                </div>
+
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <!-- Bagian Lihat -->
+                        <li class='sidebar-title'>Main Menu</li>
+
+                        <li class="sidebar-item active">
+                            <a href="#" class='sidebar-link'>
+                                <i data-feather="file" width="20"></i>
+                                <span>Registrasi Perawatan</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class='sidebar-link'>
+                                <i data-feather="user" width="20"></i>
+                                <span>Data Dokter</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class='sidebar-link'>
+                                <i data-feather="users" width="20"></i>
+                                <span>Data Pasien</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="#" class='sidebar-link'>
+                                <i data-feather="file-plus" width="20"></i>
+                                <span>Riwayat Tindakan</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i data-feather="briefcase" width="20"></i>
+                                <span>Data Obat</span>
+                            </a>
+
+                            <ul class="submenu ">
+                                <li>
+                                    <a href="#">Obat</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Riwayat Obat</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Bagian Input -->
+                        <li class='sidebar-title'>Forms Input</li>
+
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
+                                <i data-feather="file-text" width="20"></i>
+                                <span>Form Registrasi Perawatan</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
+                                <i data-feather="file-text" width="20"></i>
+                                <span>Form Dokter</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
+                                <i data-feather="file-text" width="20"></i>
+                                <span>Form Pasien</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
+                                <i data-feather="file-text" width="20"></i>
+                                <span>Form Riwayat Tindakan</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i data-feather="file-text" width="20"></i>
+                                <span>Form Data Obat</span>
+                            </a>
+
+                            <ul class="submenu ">
+                                <li>
+                                    <a href="#">Obat</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Riwayat Obat</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+
+        <div id="main">
+            <nav class="navbar navbar-header navbar-expand navbar-light">
+                <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex align-items-center navbar-light ms-auto">
+                        <li class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown"
+                                class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                <div class="avatar me-1">
+                                    <img src="assets/images/avatar/1.jpg" alt="" srcset="">
+                                </div>
+                                <div class="d-none d-md-block d-lg-inline-block">Hi, Elsha</div>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#"><i data-feather="log-out"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="main-content container-fluid">
+                <section class="section">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Judul Halaman</h4>
+
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Non laudantium neque officiis ipsa optio nihil necessitatibus provident obcaecati 
+                                    repellendus sint dolorum earum vero voluptas, fugit unde, placeat deserunt. Nemo, sed.
+                                </p>
+
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">No.</th>
+                                        <th scope="col">Nama</th>
+                                        <th scope="col">NIK</th>
+                                        <th scope="col">Alamat</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Zhong Chenle</td>
+                                        <td>22112001</td>
+                                        <td>Shanghai</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jung Jaehyun</td>
+                                        <td>14021997</td>
+                                        <td>Korea Selatan</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>Na Jaemin</td>
+                                        <td>08082000</td>
+                                        <td>Korea Selatan</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination pagination-primary  justify-content-center">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">
+                                                <span aria-hidden="true">
+                                                    <i data-feather="chevron-left"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">
+                                            <span aria-hidden="true">
+                                                <i data-feather="chevron-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <p class="text-center">RSUD Raden Mataher 2020 &copy; By Universitas Jambi</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/js/feather-icons/feather.min.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/vendors/chartjs/Chart.min.js"></script>
+    <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
